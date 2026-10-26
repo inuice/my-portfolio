@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KANNA Illustration Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,300;0,500;1,300&family=Plus+Jakarta+Sans:wght@400;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+
+  <body class="site-body">
+    <canvas id="marchingSquaresCanvas" class="bg-canvas"></canvas>
+
+    <header class="site-header">
+      <div class="header-logo">★ Portfolio ★</div>
+      <button class="header-menu-btn">Menu</button>
+    </header>
+    <nav class="header-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="menu-close-btn" aria-label="閉じる">×</button>
+      </ul>
+    </nav>
+    <div class="menu-overlay"></div>
+
+    <main class="portfolio-page">
+      <!-- ジャンルボタン -->
+      <nav class="category-menu">
+        <button class="category-btn" data-category="All">All</button>
+
+        <button class="category-btn" data-category="Design">Design</button>
+
+        <button class="category-btn" data-category="Activity">Activity</button>
+
+        <button class="category-btn" data-category="Other">Other</button>
+      </nav>
+
+      <!-- 作品一覧 -->
+      <section class="portfolio-grid">
+        <article class="card" data-category="Design">
+          <img src="./画像/engeki.jpg" alt="オーキャンリーフ" />
+          <div class="info">
+            <h2>オープンキャンパス リーフレット</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity Design">
+          <img src="./画像/tabeten.jpg" alt="ゼミ展" />
+          <div class="info">
+            <h2>まだ食べられるよ展 〜食材レスキュー大作戦〜</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/hansoku_ol-1.jpg" alt="第18回宣伝会議 販促コンペ" />
+          <div class="info">
+            <h2>第18回宣伝会議 販促コンペ<br />温泉ぷかぷかフレンズ</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/marathon.jpg" alt="金沢マラソン2026タオルデザイン" />
+          <div class="info">
+            <h2>金沢マラソン2026タオルデザイン</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img
+            src="./画像/asahi.jpg"
+            alt="朝日広告賞「せまい、住まい、ひろい、せかい」"
+          />
+          <div class="info">
+            <h2>朝日広告賞「せまい、住まい、ひろい、せかい」</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/nanchareA_ol.jpg" alt="なんちゃれチラシ" />
+          <div class="info">
+            <h2>なんチャレ チラシ</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/noplate.jpg" alt="高山村ナンバープレートデザイン" />
+          <div class="info">
+            <h2>高山村ナンバープレートデザイン</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/kiritorudai.jpg" alt="グループ展DM ポスター" />
+          <div class="info">
+            <h2>キリトル展DM ポスター</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img
+            src="./画像/kiritoruten.jpg"
+            alt="キリトル展 4人の視点から見つけた世界"
+          />
+          <div class="info">
+            <h2>キリトル展 4人の視点から見つけた世界</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/assyukumock.jpg" alt="空き缶ペット圧縮機デザイン" />
+          <div class="info">
+            <h2>空き缶ペット圧縮機 デザイン</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img
+            src="./画像/busmock.jpg"
+            alt="公益社団法人 石川県獣医師会 移動診療車ラッピングバスデザイン"
+          />
+          <div class="info">
+            <h2>
+              公益社団法人 石川県獣医師会 移動診療車ラッピングバスデザイン
+            </h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img
+            src="./画像/koukou2.jpg"
+            alt="大聖寺高校 探求授業コーディネーター"
+          />
+          <div class="info">
+            <h2>大聖寺高校 探求授業コーディネーター</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img
+            src="./画像/maturi3.JPG"
+            alt="百万石祭り情報発信隊ボランティア"
+          />
+          <div class="info">
+            <h2>百万石祭り情報発信隊ボランティア</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img src="./画像/kiritorugakusai.JPG" alt="学祭2025 キリトル模擬店" />
+          <div class="info">
+            <h2>学祭2025模擬店 にがおえ絵画 販売</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img src="./画像/gakusai2024.jpg" alt="学祭2024 写真サークル" />
+          <div class="info">
+            <h2>学祭2024 写真サークル</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Activity">
+          <img src="./画像/volunteer.JPG" alt="金沢マラソンボランティア" />
+          <div class="info">
+            <h2>金沢マラソン ボランティアスタッフ</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/osara.png" alt="陶芸で作った２枚のお皿" />
+          <div class="info">
+            <h2>陶芸 皿</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/pop.jpg" alt="北海道チーズ蒸しケーキポップ" />
+          <div class="info">
+            <h2>北海道チーズ蒸しケーキPOPデザイン</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Design">
+          <img src="./画像/nenga.jpg" alt="年賀状デザイン 午年" />
+          <div class="info">
+            <h2>午年 年賀状デザイン</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/illust_kaido.JPG"alt="海藤瞬" />
+          <div class="info">
+            <h2>海藤瞬</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/illust_youwo1.JPG"妖怪ウォッチ" />
+          <div class="info">
+            <h2>妖怪ウォッチ 水遊び</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/illust_youwo2.JPG"妖怪ウォッチ" />
+          <div class="info">
+            <h2>妖怪ウォッチ 夏休み</h2>
+          </div>
+        </article>
+
+        <article class="card" data-category="Other">
+          <img src="./画像/illust_youwo3.JPG"妖怪ウォッチ" />
+          <div class="info">
+            <h2>妖怪ウォッチ 雨</h2>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="./script2.js"></script>
+  </body>
+</html>
